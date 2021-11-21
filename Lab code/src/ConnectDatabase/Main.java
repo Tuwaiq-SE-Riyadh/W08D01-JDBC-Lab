@@ -13,9 +13,9 @@ public class Main {
             Statement statement = connection.createStatement();
 
             // Q1
-//            int rowsAffected = statement.executeUpdate("INSERT INTO java_programming VALUES (55, 'Carl Davis', 61)," +
-//                    "(66,'Dennis Fredrickson', 88), (77, 'Jane Richards', 78)");
-//            System.out.println("Query complete, " + rowsAffected + " rows added.");
+            int rowsAffected = statement.executeUpdate("INSERT INTO java_programming VALUES (55, 'Carl Davis', 61)," +
+                    "(66,'Dennis Fredrickson', 88), (77, 'Jane Richards', 78)");
+            System.out.println("Query complete, " + rowsAffected + " rows added.");
             // Q2
             ResultSet programmer = statement.executeQuery("SELECT * FROM java_programming WHERE grade BETWEEN 60 AND 80");
             while (programmer.next()) {
