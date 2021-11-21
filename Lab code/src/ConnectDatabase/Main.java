@@ -23,7 +23,7 @@ public class Main {
             }
 
             // Q3
-            int rowsAffected = statement.executeUpdate("UPDATE java_programming SET grade =65 WHERE name = 'Carl Davis' ");
+            rowsAffected = statement.executeUpdate("UPDATE java_programming SET grade =65 WHERE name = 'Carl Davis' ");
             if (rowsAffected == 0) {
                 System.out.println("Query not completed");
             } else {
