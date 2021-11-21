@@ -1,0 +1,16 @@
+CREATE TABLE Programmers.java_programming (
+    id integer NOT NULL,
+    name character(50),
+    grade integer(11)
+);
+
+describe java_programming;
+
+INSERT into java_programming (id, name, grade)
+values 
+(55, "Carl Davis", 61),
+ (66, "Dennis Fredrickson", 88),
+ (77, "Jane Richards", 78);
+ 
+select * from java_programming;
+
